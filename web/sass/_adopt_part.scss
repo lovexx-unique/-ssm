@@ -1,0 +1,56 @@
+/******** abopt number counter ***********/
+.abopt_number_counter{
+    h2{
+        font-size: 46px;
+        line-height: 58px;
+        font-weight: 400;
+        @media #{$tab}{
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+    p{
+        margin: 20px 0 38px;
+        @media #{$tab}{
+            margin: 15px 0 20px;
+        }
+    }
+    .btn_1{
+        margin-top: 65px;
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+        @media #{$medium_device}{
+            margin-top: 25px;
+        }
+    }
+    .adopt_image{
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+    }
+    .counter_number{
+        display: flex;
+        .single_counter_number{
+            flex: 35%;
+            max-width: 35%;
+            h3{
+                font-size: 36px;
+            }
+            img{
+                display: block;
+            }
+            span{
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 30px;
+                margin: 14px 0 5px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}

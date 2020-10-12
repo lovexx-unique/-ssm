@@ -1,0 +1,68 @@
+/******** gallery css here *********/
+.gallery_part{
+    .gallery_tittle{
+        text-align: center;
+        margin-bottom: 100px;
+        @media #{$tab}{
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 30px;
+            line-height: 40px;
+            color: #1F1F1F;
+            @media #{$tab}{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .single_gallery_part{
+        display: inline-block;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        display: block;
+        img{
+            border-radius: 5px;
+            width: 100%;
+        }
+        i{
+            font-size: 40px;
+            color: $white_color;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 2;
+            top: 45%;
+            opacity: 0;
+            visibility: hidden;
+            @include transform_time(.5s);
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $btn_hover;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            @include transform_time(.5s);
+        }
+        &:hover{
+            i{
+                opacity: 1;
+                visibility: visible;
+            }
+            &:after{
+                opacity: .3;
+                visibility: visible;
+            }
+        }
+    }
+}
+/******** gallery css end *********/

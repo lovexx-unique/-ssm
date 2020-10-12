@@ -1,0 +1,82 @@
+/**************** banner part css start ****************/
+.banner_part{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include background("../img/banner_bg.png");
+    background-position: right;
+    @media #{$small_mobile}{
+        height: 600px;
+        background-color: #FEDEE1;
+        background-image: none;
+    }
+    @media #{$large_mobile}{
+        height: 650px;
+        background-color: #FEDEE1;
+        background-image: none;
+    }
+    @media #{$tab_device}{
+        height: 700px;
+        background-color: #FEDEE1;
+        background-image: none;
+    }
+    @media #{$medium_device}{
+        background-position: center;
+    }
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 130px;
+        background-image: url(../img/banner_sharp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner_text{
+        display: table;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 99;
+        margin-top: 60px;
+        @media #{$small_mobile}{
+            text-align: center;
+            margin-top: 0px;
+        }
+        .banner_text_iner{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        h5{
+            font-size: 22px;
+            text-transform: capitalize;
+            font-weight: 400;
+            color: $btn_hover;
+            line-height: 25px;
+        }
+        h1{
+            font-size: 80px;
+            line-height: 90px;
+            text-transform: capitalize;
+            font-weight: 400;
+            margin: 23px 0 45px;
+            @media #{$tab}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.3;
+                margin: 15px 0 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                margin-bottom: 15px;
+                line-height: 1.4;
+            }
+        }
+    }
+    
+}
+  
+/**************** hero part css end ****************/

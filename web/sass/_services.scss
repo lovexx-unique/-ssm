@@ -1,0 +1,41 @@
+/******** services css hrer ********/
+.services_bg{
+    background-image: url(../img/services_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.service_part{
+    @media #{$tab}{
+        background-color: #F2F8F8;
+        padding: 70px 0 40px;
+    }
+    .single_service_part{
+        text-align: center;
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 500;
+            padding: 43px 0 20px;
+            @media #{$tab}{
+                padding: 10px 0 0;
+                font-size: 20px;
+            }
+        }
+        p{
+            padding: 0 30px;
+            @media #{$tab}{
+                padding: 0;
+            }
+        }
+    }
+    img{
+        border-radius: 50%;
+        @media #{$tab}{
+            max-width: 100px;
+        }
+    }
+}
+/******** services css end ********/

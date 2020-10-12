@@ -1,0 +1,35 @@
+/**************** about css start ****************/
+.about_part{
+    position: relative;
+    z-index: 1;
+    .about_img{
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+    }
+    .about_text{
+        h2{
+            line-height: 58px;
+            margin: 25px 0;
+            font-size: 46px;
+            font-weight: 400;
+            @media #{$tab}{
+                font-size: 25px;  
+                margin-bottom: 15px;
+                line-height: 30px;
+                margin: 15px 0;
+            }
+        }
+        .btn_1{
+            margin-top: 60px;
+            padding: 15px 69px;
+            @media #{$tab}{
+                margin-top: 30px;
+                padding: 15px 30px;
+            }
+            @media #{$medium_device}{
+                margin-top: 30px;
+            }
+        }
+    }
+}

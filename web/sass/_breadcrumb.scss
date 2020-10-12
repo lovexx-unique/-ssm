@@ -1,0 +1,51 @@
+.breadcrumb_bg{
+	@include background("../img/breadcrumb.png");
+}
+.breadcrumb{
+	position: relative;
+	z-index: 1;
+	margin-bottom: 0px;
+	&:after{
+		position: absolute;
+		content: "";
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 64px;
+		background-image: url(../img/breadcrumb_sharp.png);
+	}
+	.breadcrumb_iner{
+		height: 400px;
+		width: 100%;
+		display: table;
+		.breadcrumb_iner_item{
+			display: table-cell;
+			vertical-align: middle;
+			h1{
+				font-size: 60px;
+				font-weight: 400;
+				text-transform: capitalize;
+				@media #{$small_mobile}{
+					font-size: 35px;
+				}
+				@media #{$large_mobile}{
+					font-size: 35px;
+				}
+				@media #{$tab_device}{
+					font-size: 40px;
+				}
+				@media #{$medium_device}{
+				
+				}
+			}
+			p{
+					font-size: 15px;
+					color: 8a8a8a;
+			}
+			span{
+					margin: 0px 5px;
+					font-size: 12px;
+			}
+		}
+	}
+}

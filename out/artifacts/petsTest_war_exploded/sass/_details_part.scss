@@ -1,0 +1,47 @@
+/******** details part css here*********/
+.details_part{
+    padding: 130px 0 100px;
+    @media #{$tab} {
+        padding: 70px 0 40px;
+    }
+    @media #{$medium_device} {
+        padding: 80px 0 50px;
+    }
+    .single_abopt_part{
+        padding: 40px;
+        border: 1px solid #E5E5E5;
+        text-align: center;
+        margin-bottom: 30px;
+        img{
+            max-width: 160px;
+            margin: 0 auto;
+            display: block;
+        }
+        span{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: $btn_hover;
+            margin-top: 18px;
+            display: inline-block;
+        }
+        h4{
+            font-size: 30px;
+            font-weight: 500;
+            margin: 6px 0 16px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .btn_1{
+            background-color: $btn_hover;
+            margin-top: 27px;
+        }
+    }
+    .details_part_btn{
+        margin-top: 70px;
+        .btn_1{
+            padding: 20px 63px;
+        }
+    }
+}
+/******** details part css end*********/

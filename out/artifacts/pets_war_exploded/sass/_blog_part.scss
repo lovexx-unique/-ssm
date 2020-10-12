@@ -1,0 +1,157 @@
+/**************** blog part css start ****************/
+.blog_part{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 46%;
+        content: "";
+        background-color: $section_bg;
+        z-index: -1;
+        @media #{$small_mobile}{
+
+        }
+        @media #{$large_mobile}{
+            height: 35%;
+        }
+        @media #{$tab_device}{
+            height: 35%;
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+    .blog_right_sidebar .widget_title {
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-style: inherit !important; 
+    }
+    .single-home-blog{
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+           margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        .card-img-top{
+            border-radius: 0px;
+        }
+        .card{
+            border: 0px solid transparent;
+            border-radius: 0px;
+            background-color: transparent;
+            .card-body{
+                padding: 20px 0px 0px;
+                @media #{$small_mobile}{
+                    padding: 10px 0px 0px;
+                }
+                @media #{$large_mobile}{
+                
+                }
+                @media #{$tab_device}{
+                
+                }
+                @media #{$medium_device}{
+                
+                }
+                
+            }
+            .dot{
+                position: relative;
+                padding-left: 15px;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    top: 6px;
+                    left: 0;
+                    background-color: $btn_bg;
+                    border-radius: 2px;
+                }
+            }
+            span{
+                color: $font_4;
+                margin-bottom: 10px;
+                display: inline-block;
+                margin-top: 10px;
+                @media #{$small_mobile}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$large_mobile}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$tab_device}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$medium_device}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+            }
+            h5{
+                font-weight: 700;
+                line-height: 1.5;
+                font-size: 20px;
+                margin-bottom: 25px;
+                @include transform_time(0.8s);
+                @media #{$small_mobile}{
+                    margin-bottom: 10px;
+                }
+                @media #{$large_mobile}{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                }
+                @media #{$tab_device}{
+                    margin-bottom: 10px;
+                }
+                @media #{$medium_device}{
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+                &:hover{
+                    color: $btn_bg;
+                }
+            }
+            ul{
+                border-top: 1px solid #e1e1e1;
+                li{
+                    display: inline-block;
+                    color: $font_4;
+                    margin-top: 20px;
+                    margin-right: 40px;
+                    @media #{$small_mobile}{
+                        margin-top: 10px;
+                    }
+                    @media #{$large_mobile}{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    @media #{$tab_device}{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    @media #{$medium_device}{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                    span{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+/****** voulantier part here *******/
+.voulantier_part{
+    text-align: center;
+    margin: 0 auto;
+    @media #{$tab}{
+        padding: 70px 0 40px;
+    }
+    @media #{$medium_device}{
+        padding: 70px 0 40px;
+    }
+    img{
+        border-radius: 50%;
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        @media #{$tab}{
+            max-width: 200px;
+        }
+    }
+    h4{
+       font-size: 30px;
+       margin-top: 45px;
+       @media #{$tab}{
+        font-size: 25px;
+        margin-top: 10px;
+       }
+    }
+    p{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .social_icon{
+        margin-top: 34px;
+        @media #{$tab}{
+            margin-top: 10px;
+           }
+        a{
+            color: #BABABA;
+            margin: 0 8px;
+        }
+    }
+    .single_voulantier_part{
+        @media #{$tab}{
+          margin-bottom: 30px;
+        }
+        @media #{$medium_device}{
+          margin-bottom: 30px;
+        }
+    }
+}

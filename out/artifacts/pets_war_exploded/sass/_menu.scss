@@ -1,0 +1,248 @@
+/**************menu part start*****************/
+.sub_header{
+	padding: 25px 0px;
+	@media #{$small_mobile}{
+		#logo{
+			text-align: center;
+		}
+	}
+	@media #{$large_mobile}{
+		#logo{
+			text-align: center;
+		}
+	}
+	@media #{$tab_device}{
+	
+	}
+	@media #{$medium_device}{
+	
+	}
+	.sub_header_social_icon{
+		@media #{$small_mobile}{
+			float: none !important;
+			text-align: right;
+		}
+		@media #{$large_mobile}{
+			float: none !important;
+			text-align: right;
+		}
+		@media #{$tab_device}{
+		
+		}
+		@media #{$medium_device}{
+		
+		}
+		a{
+			font-size: 14px;
+			color: #555555;
+			margin-left: 60px;
+			display: inline-block;
+			@media #{$tab}{
+				margin-left: 5px;
+				margin-right: 5px;
+				text-align: left !important;
+			}
+			i{
+				margin-right: 12px;
+				color: $btn_bg;
+			}
+		}
+		.register_icon{
+			border: 1px solid #e5e9ed;
+			padding: 9px 26px 9px 60px;
+			border-radius: 50px;
+			position: relative;
+			i{
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				text-align: center;
+				line-height: 38px;
+				border: 1px solid #e5e9ed;
+				border-radius: 50%;
+				position: absolute;
+				left: -1px;
+				top: -1px;
+				@include transform_time(2s);
+			}
+			&:hover{
+				padding: 9px 60px 9px 26px;
+				background-color: $btn_bg;
+				color: $white-color;
+				i{
+					left: auto;
+					right: -14px;
+					top: -1px;
+					color: $white-color;
+				}
+			}
+		}
+	}
+	.sub_header_social_icon{
+		a{
+			i{
+				font-size: 12px;
+				color: $white_color;
+				background-color: $base_color;
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				text-align: center;
+				display: inline-block;
+				border-radius: 50%;
+			}
+		}
+		.btn_1{
+			color: $white_color;
+			background-color: $btn_hover;
+			&:hover{
+				background-color: $btn_bg;
+			}
+		}
+	}
+}
+.main_menu{
+	background-color: #082B49;
+	.navbar{
+		padding: 0;
+
+	}
+	ul {
+		li{
+			display: inline-block;
+			font-size: 16px;
+			text-transform: capitalize;
+			:hover{
+				color: $btn_bg !important;
+			}
+			a{
+				color: #fff !important;
+				padding: 27px 35px !important;
+				line-height: 16px;
+				@media #{$tab}{
+					padding: 12px 10px !important;
+				}
+				@media #{$medium_device}{
+					padding: 27px 20px !important;
+				}
+			}
+		}
+	}
+	.header_social_icon {
+		ul li{
+			padding-right: 13px;
+			a{
+				color: #c3c6c9;
+				&:hover{
+					color: $btn_bg;
+				}
+			}
+		}
+	}
+	@media #{$tab}{
+		.navbar{
+			padding: 15px 0;
+		}
+		.navbar-toggler{
+			i{
+				color: $white_color;
+				font-size: 30px;
+			}
+		}
+		.navbar-collapse{
+			position: absolute;
+			left: 0;
+			top: 71px;
+			width: 100%;
+			background-color: #fff;
+			z-index: 999;
+		}
+		.nav-item {
+			padding: 5px 10px 5px 15px;
+			background-color: $btn_bg;
+		}
+		.navbar-nav .nav-link:hover{
+			color: $white_color !important;
+		}
+		.dropdown {
+			.dropdown-menu {
+				transform: scale(1,0);
+				display: none;
+			}
+			&:hover {
+				.dropdown-menu {
+					transform: scale(1);
+					display: block;
+				}
+			}
+		}
+	}
+	@media #{$medium_device}{
+		.dropdown {
+			.dropdown-menu {
+				transform: scale(1,0);
+				display: none;
+			}
+			&:hover {
+				.dropdown-menu {
+					transform: scale(1);
+					display: block;
+				}
+			}
+		}
+	}
+	
+	
+}
+.menu_fixed {
+	position: fixed;
+	z-index: 9999 !important;
+	width: 100%;
+	background-color: $btn_bg;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+	top: 0;
+	span{
+		color: #000 !important;
+	}
+	ul {
+		li{
+			a{
+				&:hover{
+					color: $white_color !important;
+				}
+			}
+		}
+	}
+}
+.dropdown-menu{
+	border: 0px solid rgba(0,0,0,.15) !important;
+	background-color: #fafafa;
+}
+
+.dropdown {
+    .dropdown-menu {
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1,0);
+		display: block;
+		border-radius: 0;
+		padding: 0;
+		margin-top: 0;
+		.dropdown-item{
+			font-size: 14px;
+			padding: 12px 20px !important;
+			color: $btn_bg !important;
+			
+			&:hover{
+				background-color: $btn_hover;
+				color: $white_color !important;
+			}
+		}
+    }
+    &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+        }
+    }
+}
