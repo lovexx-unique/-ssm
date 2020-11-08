@@ -29,7 +29,7 @@ public class UserController {
     public String test(String number, String password, HttpSession session,Model model){
         User user = userService.selectOne(number);
         //判断是否查到用户
-        if (user != null){
+        if (user.getNumber() != null){
             //判断输入的密码是否正确
             if (password.equals(user.getPassword())){
                 session.setAttribute("user",user);
@@ -39,6 +39,7 @@ public class UserController {
                 return "login";
             }
         }
+        System.out.println(1111);
         model.addAttribute("msg","该用户不存在，请进行注册");
         return "login";
     }

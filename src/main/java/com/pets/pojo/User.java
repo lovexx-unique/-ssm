@@ -1,6 +1,5 @@
 package com.pets.pojo;
 
-import java.io.Serializable;
 
 /**
  * (User)实体类

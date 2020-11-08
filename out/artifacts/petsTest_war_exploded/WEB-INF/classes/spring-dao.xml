@@ -13,8 +13,6 @@
 
     <!-- 2.数据库连接池 -->
     <!--数据库连接池
-        dbcp  半自动化操作  不能自动连接
-        c3p0  自动化操作（自动的加载配置文件 并且设置到对象里面）
     -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!-- 配置连接池属性 -->

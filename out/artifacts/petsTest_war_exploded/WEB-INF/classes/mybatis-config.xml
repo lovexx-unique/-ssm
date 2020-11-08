@@ -3,19 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
+    <!--引入外部日志文件-->
     <settings>
         <setting name="logImpl" value="LOG4J"/>
     </settings>
-
+    <!--启动别名，自动扫描包-->
     <typeAliases>
         <package name="com.pets.pojo"/>
     </typeAliases>
-
+    <!--映射器，映射我们所写的dao层的xml文件-->
     <mappers>
         <mapper class="com.pets.dao.PetWatchMapper"/>
         <mapper class="com.pets.dao.ForumMapper"/>
         <mapper class="com.pets.dao.UserMapper"/>
     </mappers>
-
 </configuration>

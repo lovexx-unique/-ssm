@@ -80,7 +80,6 @@
   </select>
 
 
-
   <!--根据id删除信息-->
   <!--<delete id="selectAll" parameterType="java.lang.Integer">-->
   <!--  delete from pet_watch-->

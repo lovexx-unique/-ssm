@@ -1,4 +1,5 @@
 package com.pets.dao;
+import org.apache.ibatis.annotations.Param;
 
 
 import com.pets.pojo.PetWatch;
@@ -25,5 +26,10 @@ public interface PetWatchMapper {
 
     //查询信息分页
     List<PetWatch> selectAllLimit(Map map);
+
+    PetWatch findAllByIdAndPetNumberAfter(@Param("id")Integer id,@Param("minPetNumber")Integer minPetNumber);
+
+	;
+
 
 }

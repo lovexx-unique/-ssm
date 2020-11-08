@@ -46,7 +46,7 @@
 
     <!--配置事务切入-->
     <aop:config>
-        <aop:pointcut id="txPointCut" expression="execution(* com.pets.mapper.*.*(..))"/>
+        <aop:pointcut id="txPointCut" expression="execution(* com.pets.dao.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
     </aop:config>
 </beans>

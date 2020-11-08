@@ -5,6 +5,7 @@
 
 <mapper namespace="com.pets.dao.UserMapper">
 
+    <!--这是sql片段,也就是java中的通用代码块-->
     <sql id="Base_Column_List">
     id, number, password, name, sex, age, occupation, phone, address, intention, email,
     weChat, authority, status

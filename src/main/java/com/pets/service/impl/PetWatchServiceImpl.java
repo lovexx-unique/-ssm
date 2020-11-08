@@ -4,9 +4,9 @@ import com.pets.dao.PetWatchMapper;
 import com.pets.pojo.PageBean;
 import com.pets.pojo.PetWatch;
 import com.pets.service.PetWatchService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +18,7 @@ import java.util.Map;
 @Service
 public class PetWatchServiceImpl implements PetWatchService {
 
-    @Resource
+    @Autowired
     private PetWatchMapper petWatchMapper;
 
 
